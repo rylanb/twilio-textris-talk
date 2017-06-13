@@ -12,21 +12,17 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-group :development, :test do
-  gem 'byebug', platform: :mri
-end
-group :development do
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '~> 3.0.5'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'high_voltage'
 gem 'pg'
 gem 'slim-rails'
+
 group :development do
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '~> 3.0.5'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'better_errors'
   gem 'guard-bundler'
   gem 'guard-rails'
@@ -41,10 +37,16 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
+  gem 'byebug', platform: :mri
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
