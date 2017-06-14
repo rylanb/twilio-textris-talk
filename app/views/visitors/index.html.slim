@@ -1,15 +1,16 @@
 .row
   .col-sm-8
-    .col-sm-4
-    h4.margin_100 Get More Info!
-    p Just fill in your name and phone number and more info will be sent to you via text
+    h1.margin_50 Get More Twilio and Textris Info!
+    p Just fill in your name and phone number and more info will be sent to you via text.
+    p
+      em Note: We don't save any of your info.
 
   = simple_form_for :notifications, url: notifications_path do |f|
     .margin_50
       .form-inputs
         .row
-          = f.input :name, placeholder: 'John/Jane Doe', label: 'Name Here'
+          = f.input :name, placeholder: 'John/Jane Doe', label: 'Name'
         .row
-          = f.input :user_phone, placeholder: '+15553231234', label: 'Phone Here'
+          = f.input :phone, placeholder: '+15553231234', label: 'Phone'
         .row
-          = f.submit 'Send Me The Text', class: 'btn btn-md btn-default btn-block btn-custom'
+          = f.submit 'Text Me', class: 'btn btn-md btn-default btn-block btn-custom'
