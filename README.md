@@ -1,22 +1,25 @@
-Textingexample
+Texting with Twilio Talk Repo
 ================
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[Who are Twilios competitors](http://quora.com/Who-are-Twilios-competitors)
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+[Twilio Alternatives](http://getvoip.com/blog/2016/06/01/twilio-alternatives/)
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+[Bandwidth.com](http://bandwidth.com)
 
-Problems? Issues?
------------
+[Nexmo.com](http://nexmo.com)
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+[Plivo.com](http://plivo.com)
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+[Sinch.com](http://sinch.com)
 
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
+[SMS like Emails in Rails](http://twilio.com/blog/2016/09/send-sms-messages-like-emails-in-rails-with-textris.html)
+
+[Textris Gem Repo](http://github.com/visualitypl/textris)
+
+[Twilio Example App](http://github.com/TwilioDevEd/lead-alerts-rails)
+
+[This Repo!](http://github.com/rylanb/twilio-textris-talk)
 
 Ruby on Rails
 -------------
@@ -27,24 +30,3 @@ This application requires:
 - Rails 5.0.2
 
 Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
