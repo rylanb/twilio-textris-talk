@@ -5,6 +5,8 @@ html
     title
       = content_for?(:title) ? yield(:title) : 'Texting Example'
     meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Texting Example'}"
+    == javascript_include_tag 'https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js'
+
     == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => 'reload'
     == javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
     == csrf_meta_tags
