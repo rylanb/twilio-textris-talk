@@ -1,18 +1,19 @@
 class NotificationsController < ApplicationController
 
   def create
-    AgentTexter.alert(params, user_phone).deliver
+    TalkTexter.alert(notifications_params[:name], notifications_params[:phone]).deliver
+    flash[:notice] = 'Success! Your phone should light up any second now.'
     redirect_to root_url
-      flash[:notice] = 'Success! Your phone should be pinged any second now'
   rescue Twilio::REST::RequestError => error
     p error.message
-    redirect_to root_url,
-      flash[:danger] = 'Oops! There was an error. Please try again.'
+    flash[:danger] = "Oops! There was an error. #{error.message}. Please try again or shake your fist at Rylan with silent rage."
+    redirect_to root_url
   end
 
   private
 
-  def user_phone
-    params[:notifications][:user_phone]
+  def notifications_params
+    params.require(:notifications).permit(:name, :phone)
   end
+
 end
