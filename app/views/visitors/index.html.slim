@@ -1,17 +1,15 @@
 .row
   .col-sm-8
-    .col-sm-4.demo
-    h4 Get More Info!
+    .col-sm-4
+    h4.margin_100 Get More Info!
     p Just fill in your name and phone number and more info will be sent to you via text
 
-= simple_form_for :notifications, { url: notifications_path} do |f|
-  .col-md-6
-    .panel.panel-default
-      .panel-body
-        .form-inputs
-          .row
-            = f.input :name, placeholder: 'John/Jane Doe', label: 'Name Here'
-          .row
-            = f.input :user_phone, placeholder: '+15553231234', label: 'Phone Here'
-          .row
-            = f.submit 'Submit', class: 'btn btn-md btn-primary'
+  = simple_form_for :notifications, url: notifications_path do |f|
+    .margin_50
+      .form-inputs
+        .row
+          = f.input :name, placeholder: 'John/Jane Doe', label: 'Name Here'
+        .row
+          = f.input :user_phone, placeholder: '+15553231234', label: 'Phone Here'
+        .row
+          = f.submit 'Submit', class: 'btn btn-md btn-default'
