@@ -8,6 +8,10 @@ class NotificationsController < ApplicationController
     p error.message
     flash[:danger] = "Oops! There was an error. #{error.message}. Please try again or shake your fist at Rylan with silent rage."
     redirect_to root_url
+  rescue => error
+    p error.message
+    flash[:danger] = "Oops! #{error.message}. Please shake your fist at Rylan with silent rage."
+    redirect_to root_url
   end
 
   private
