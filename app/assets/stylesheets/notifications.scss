@@ -1,3 +1,19 @@
-// Place all the styles related to the notifications controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.ribbon {
+  background-color: #9C1B21;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.75;
+  height: 40px;
+  position: absolute;
+  right: -50px;
+  text-align: center;
+  top: 40px;
+  width: 270px;
+  white-space: nowrap;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
