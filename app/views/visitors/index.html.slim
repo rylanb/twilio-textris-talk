@@ -1,11 +1,11 @@
 .row
-  .col-7.offset-1
+  .col-md-7.offset-md-1.col-xs-12
     h1.margin_50 Get More Twilio and Textris Info!
     p Just fill in your name and phone number and more info will be sent to you via text.
     p
       em Note: We don't save any of your info.
 
-  .col-3
+  .col-md-3.col-xs-12
     = simple_form_for :notifications, url: notifications_path do |f|
       .form-inputs.margin_50
         .row.form-group
